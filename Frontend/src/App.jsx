@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const server = "http://localhost:8000";
+const server = import.meta.env.VITE_BACKEND_URL;
 const connectionOptions = {
   "force new connection": true,
   reconnectionAttempts: "Infinity",
